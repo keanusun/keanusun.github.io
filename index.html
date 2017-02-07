@@ -238,6 +238,186 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/02/07/python/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Keanu">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="1Mo">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="1Mo" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/02/07/python/" itemprop="url">
+                  Getting Started with Python
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-07T02:37:41+02:00">
+                2017-02-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <center>sun yimo</center>
+
+<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>This is my assignment notes for Coursera course “Getting Started with Python”. I will put my notes and codes here sorted by weeks.</p>
+<h2 id="Week-1-3"><a href="#Week-1-3" class="headerlink" title="Week 1-3"></a>Week 1-3</h2><p>Just some introductions and low level explanations to why we program and how to install python.</p>
+<h2 id="Week-4"><a href="#Week-4" class="headerlink" title="Week 4"></a>Week 4</h2><p>Types of input, like integers, strings, floating numbers. Some reserved words for python 2.5. How to name variables in a mnemonic way and properly. Do not use numbers in beginning of the name, do not use reserved words, do not use”.” and use “_” instead of space.</p>
+<ul>
+<li>Some numeric expressions:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Operator</th>
+<th style="text-align:center">Operation </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">+</td>
+<td style="text-align:center">addtion </td>
+</tr>
+<tr>
+<td style="text-align:center">-</td>
+<td style="text-align:center">subtraction </td>
+</tr>
+<tr>
+<td style="text-align:center">*</td>
+<td style="text-align:center">multiplication </td>
+</tr>
+<tr>
+<td style="text-align:center">/</td>
+<td style="text-align:center">division </td>
+</tr>
+<tr>
+<td style="text-align:center">**</td>
+<td style="text-align:center">power </td>
+</tr>
+<tr>
+<td style="text-align:center">%</td>
+<td style="text-align:center">remainder </td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Some functions learnt</strong>:</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">int() <span class="comment">#convert to integer</span></div><div class="line"></div><div class="line">float() <span class="comment">#convert to float</span></div><div class="line"></div><div class="line">type() <span class="comment">#check the type fo the variable</span></div><div class="line"></div><div class="line">raw_input() </div><div class="line"><span class="comment">#read data from the user input and the the type is string, so you may want convert it afterward.</span></div><div class="line"><span class="comment">#this funciton is different in python 3 which becomes "input()"</span></div></pre></td></tr></table></figure>
+<h2 id="Week-5"><a href="#Week-5" class="headerlink" title="Week 5"></a>Week 5</h2><ul>
+<li><strong>conditions</strong>:</li>
+</ul>
+<p><code>if</code><br><code>elif</code><br><code>else</code><br>(remember to use “ : “ at end of the line)</p>
+<p><code>try</code> and <code>except</code> : to prevent the program from stopping because of error but to do something else.</p>
+<ul>
+<li><strong>Assignnment</strong>:</li>
+</ul>
+<blockquote>
+<p>3.1 Write a program to prompt the user for hours and rate per hour using raw_input to compute gross pay. Pay the hourly rate for the hours up to 40 and 1.5 times the hourly rate for all hours worked above 40 hours. Use 45 hours and a rate of 10.50 per hour to test the program (the pay should be 498.75). You should use raw_input to read a string and float() to convert the string to a number. Do not worry about error checking the user input - assume the user types numbers properly.</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">hrs = raw_input(<span class="string">"Enter Hours:"</span>)</div><div class="line">h = float(hrs)</div><div class="line"></div><div class="line">rate = raw_input(<span class="string">"Enter rate:"</span>)</div><div class="line">r = float(rate)</div><div class="line"></div><div class="line"><span class="keyword">if</span> h &lt;= <span class="number">40</span>:</div><div class="line">    pay = h * r</div><div class="line">    <span class="keyword">print</span> pay</div><div class="line"><span class="keyword">elif</span> h &gt; <span class="number">40</span>:</div><div class="line">    pay = <span class="number">40</span> * r + (h<span class="number">-40</span>) * r * <span class="number">1.5</span></div><div class="line">    <span class="keyword">print</span> pay</div></pre></td></tr></table></figure>
+<blockquote>
+<p>3.3 Write a program to prompt for a score between 0.0 and 1.0. If the score is out of range, print an error. If the score is between 0.0 and 1.0, print a grade using the following table:<br>Score Grade<br>= 0.9 A<br>= 0.8 B<br>= 0.7 C<br>= 0.6 D<br>&lt; 0.6 F<br>If the user enters a value out of range, print a suitable error message and exit. For the test, enter a score of 0.85.</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">score = raw_input(<span class="string">"Enter Score: "</span>)</div><div class="line"><span class="keyword">try</span>:</div><div class="line">    s = float(score)</div><div class="line"><span class="keyword">except</span>:</div><div class="line">    <span class="keyword">print</span> <span class="string">"Error"</span></div><div class="line">    quit()</div><div class="line"></div><div class="line"><span class="keyword">if</span> s &gt;= <span class="number">0.9</span>:</div><div class="line">    <span class="keyword">print</span> <span class="string">"A"</span></div><div class="line"><span class="keyword">elif</span> s &gt;= <span class="number">0.8</span>:</div><div class="line">    <span class="keyword">print</span> <span class="string">"B"</span></div><div class="line"><span class="keyword">elif</span> s &gt;= <span class="number">0.7</span>:</div><div class="line">    <span class="keyword">print</span> <span class="string">"C"</span></div><div class="line"><span class="keyword">elif</span> s &gt;= <span class="number">0.6</span>:</div><div class="line">    <span class="keyword">print</span> <span class="string">"D"</span></div><div class="line"><span class="keyword">else</span>:</div><div class="line">    <span class="keyword">print</span> <span class="string">"F"</span></div></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
   <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/01/18/Momentum strategy(Matlab)/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -457,7 +637,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">Artikel</span>
               </a>
             </div>

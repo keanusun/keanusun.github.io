@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next muse use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -103,7 +103,7 @@
     motion: true,
     duoshuo: {
       userId: '0',
-      author: '博主'
+      author: 'Author'
     },
     algolia: {
       applicationID: '',
@@ -126,7 +126,7 @@
   <title> 1Mo </title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
 
   
 
@@ -185,7 +185,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            首页
+            Home
           </a>
         </li>
       
@@ -195,7 +195,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            归档
+            Archives
           </a>
         </li>
       
@@ -205,7 +205,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            标签
+            Tags
           </a>
         </li>
       
@@ -278,7 +278,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-07T02:37:41+02:00">
                 2017-02-07
@@ -380,6 +380,24 @@
 <p>3.3 Write a program to prompt for a score between 0.0 and 1.0. If the score is out of range, print an error. If the score is between 0.0 and 1.0, print a grade using the following table:<br>Score Grade<br>= 0.9 A<br>= 0.8 B<br>= 0.7 C<br>= 0.6 D<br>&lt; 0.6 F<br>If the user enters a value out of range, print a suitable error message and exit. For the test, enter a score of 0.85.</p>
 </blockquote>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">score = raw_input(<span class="string">"Enter Score: "</span>)</div><div class="line"><span class="keyword">try</span>:</div><div class="line">    s = float(score)</div><div class="line"><span class="keyword">except</span>:</div><div class="line">    <span class="keyword">print</span> <span class="string">"Error"</span></div><div class="line">    quit()</div><div class="line"></div><div class="line"><span class="keyword">if</span> s &gt;= <span class="number">0.9</span>:</div><div class="line">    <span class="keyword">print</span> <span class="string">"A"</span></div><div class="line"><span class="keyword">elif</span> s &gt;= <span class="number">0.8</span>:</div><div class="line">    <span class="keyword">print</span> <span class="string">"B"</span></div><div class="line"><span class="keyword">elif</span> s &gt;= <span class="number">0.7</span>:</div><div class="line">    <span class="keyword">print</span> <span class="string">"C"</span></div><div class="line"><span class="keyword">elif</span> s &gt;= <span class="number">0.6</span>:</div><div class="line">    <span class="keyword">print</span> <span class="string">"D"</span></div><div class="line"><span class="keyword">else</span>:</div><div class="line">    <span class="keyword">print</span> <span class="string">"F"</span></div></pre></td></tr></table></figure>
+<h2 id="Week-6"><a href="#Week-6" class="headerlink" title="Week 6"></a>Week 6</h2><ul>
+<li><strong>lecture</strong>:<br><code>def</code>define a function<br><code>return</code> stop the function and return a value, and this kind of funciton called fruitful function. The function that does not return a value called void function.</li>
+<li><strong>Assignment</strong>:<blockquote>
+<p>4.6 Write a program to prompt the user for hours and rate per hour using raw_input to compute gross pay. Award time-and-a-half for the hourly rate for all hours worked above 40 hours. Put the logic to do the computation of time-and-a-half in a function called computepay() and use the function to do the computation. The function should return a value. Use 45 hours and a rate of 10.50 per hour to test the program (the pay should be 498.75). You should use raw_input to read a string and float() to convert the string to a number. Do not worry about error checking the user input unless you want to - you can assume the user types numbers properly. Do not name your variable sum or use the sum() function.</p>
+</blockquote>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">computepay</span><span class="params">(h,r)</span>:</span></div><div class="line">    <span class="keyword">if</span> h &lt;= <span class="number">40</span>:</div><div class="line">        pay = h * r</div><div class="line">    <span class="keyword">elif</span> h &gt; <span class="number">40</span>:</div><div class="line">        pay = <span class="number">40</span> * r + (h<span class="number">-40</span>) * r * <span class="number">1.5</span></div><div class="line">    <span class="keyword">return</span> pay</div><div class="line"><span class="comment"># buld a function to compute payment first.</span></div><div class="line">hrs = raw_input(<span class="string">"Enter Hours:"</span>)</div><div class="line">h = float(hrs)</div><div class="line">rate = raw_input(<span class="string">"Enter rate:"</span>)</div><div class="line">r = float(rate)</div><div class="line">p = computepay(h,r) </div><div class="line"></div><div class="line"><span class="keyword">print</span> p</div></pre></td></tr></table></figure>
+<h2 id="Week-7"><a href="#Week-7" class="headerlink" title="Week 7"></a>Week 7</h2><ul>
+<li><p><strong>lecture</strong>:<br><code>while</code> basically it is a <code>if</code> but whith <strong>Loop</strong>. <code>While</code> loops are called <strong>indefinite loop</strong> because they keep going until a logical condition becomes <strong>False</strong>.<br><code>for</code> loop is called <strong>definite loop</strong>. Because it execute an exact number of times.<br><code>break</code> one way to control the execution of loop. Get out from current loop.<br><code>continue</code> go back to the beginning of current loop(the line of <code>while</code>) and execute.<br><code>None</code> you can give a variable none value.<br><code>is</code>and<code>is not</code> is more strict that <code>==</code> and <code>!=</code></p>
+</li>
+<li><p><strong>assignment</strong>:</p>
+<blockquote>
+<p>5.2 Write a program that repeatedly prompts a user for integer numbers until the user enters ‘done’. Once ‘done’ is entered, print out the largest and smallest of the numbers. If the user enters anything other than a valid number catch it with a try/except and put out an appropriate message and ignore the number. Enter the numbers from the book for problem 5.1 and Match the desired output as shown.</p>
+</blockquote>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">largest = <span class="keyword">None</span></div><div class="line">smallest = <span class="keyword">None</span></div><div class="line"></div><div class="line"><span class="keyword">while</span> <span class="keyword">True</span>:</div><div class="line">    inp = raw_input(<span class="string">"Enter a number: "</span>)</div><div class="line">    <span class="keyword">if</span> inp == <span class="string">"done"</span> : <span class="keyword">break</span></div><div class="line">    <span class="keyword">try</span>:</div><div class="line">        num = float(inp)</div><div class="line">    <span class="keyword">except</span>:</div><div class="line"><span class="comment"># print "Please enter a number as input or \'done\'"</span></div><div class="line">        <span class="keyword">print</span> <span class="string">"Invalid input"</span></div><div class="line">        <span class="keyword">continue</span></div><div class="line">    <span class="keyword">if</span> smallest <span class="keyword">is</span> <span class="keyword">None</span>:</div><div class="line">        smallest = num </div><div class="line">    <span class="keyword">if</span> num &gt; largest :</div><div class="line">        largest = num</div><div class="line">    <span class="keyword">elif</span> num &lt; smallest :</div><div class="line">        smallest = num</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">done</span><span class="params">(largest,smallest)</span>:</span></div><div class="line">    <span class="keyword">print</span> <span class="string">"Maximum is"</span>, int(largest)  </div><div class="line">    <span class="keyword">print</span> <span class="string">"Minimum is"</span>, int(smallest)</div><div class="line"></div><div class="line">done(largest,smallest)</div></pre></td></tr></table></figure>
 
           
         
@@ -458,7 +476,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-18T02:37:41+02:00">
                 2017-01-18
@@ -638,7 +656,7 @@
             <div class="site-state-item site-state-posts">
               <a href="/archives">
                 <span class="site-state-item-count">2</span>
-                <span class="site-state-item-name">日志</span>
+                <span class="site-state-item-name">posts</span>
               </a>
             </div>
           
@@ -649,7 +667,7 @@
             <div class="site-state-item site-state-tags">
               <a href="/tags">
                 <span class="site-state-item-count">2</span>
-                <span class="site-state-item-name">标签</span>
+                <span class="site-state-item-name">tags</span>
               </a>
             </div>
           
@@ -697,11 +715,11 @@
 
 
 <div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
-  主题 -
+  Theme -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
     NexT.Muse
   </a>

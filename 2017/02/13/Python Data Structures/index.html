@@ -102,7 +102,7 @@ Week 1
 notes
 
 [] index symbol, first index is 0 not">
-<meta property="og:updated_time" content="2017-02-13T20:23:56.000Z">
+<meta property="og:updated_time" content="2017-02-13T20:27:18.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python Data Structures">
 <meta name="twitter:description" content="sun yimo
@@ -367,11 +367,11 @@ notes
 </ul>
 <p><code>collection</code> allow us to put many values in a single “variable”<br><code>list</code> use <code>[]</code><br><code>append()</code> add new things to the list<br><code>sort()</code> to sort<br><code>split()</code> breaks a string into parts produces a list of strings.</p>
 <ul>
-<li><strong>assignment</strong><blockquote>
+<li><strong>assignment</strong></li>
+</ul>
+<blockquote>
 <p>8.4 Open the file romeo.txt and read it line by line. For each line, split the line into a list of words using the split() method. The program should build a list of words. For each word on each line check to see if the word is already in the list and if not append it to the list. When the program completes, sort and print the resulting words in alphabetical order.<br>You can download the sample data at <a href="http://www.pythonlearn.com/code/romeo.txt" target="_blank" rel="external">http://www.pythonlearn.com/code/romeo.txt</a></p>
 </blockquote>
-</li>
-</ul>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">fname = raw_input(<span class="string">"Enter file name: "</span>)</div><div class="line">fh = open(fname)</div><div class="line">lst = list()</div><div class="line"></div><div class="line"><span class="keyword">for</span> line <span class="keyword">in</span> fh:</div><div class="line">    line = line.rstrip().split()</div><div class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> line:</div><div class="line">        <span class="keyword">if</span> <span class="keyword">not</span> i <span class="keyword">in</span> lst:</div><div class="line">            lst.append(i)</div><div class="line"></div><div class="line">lst.sort()</div><div class="line"><span class="keyword">print</span> lst</div></pre></td></tr></table></figure>
 <blockquote>
 <p>8.5 Open the file mbox-short.txt and read it line by line. When you find a line that starts with ‘From ‘ like the following line:<br><code>From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008</code><br>You will parse the From line using split() and print out the second word in the line (i.e. the entire address of the person who sent the message). Then print out a count at the end.<br>Hint: make sure not to include the lines that start with ‘From:’.</p>

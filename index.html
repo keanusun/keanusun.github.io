@@ -238,6 +238,142 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/02/17/Using Python to Access Web Data/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Keanu">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="1Mo">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="1Mo" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/02/17/Using Python to Access Web Data/" itemprop="url">
+                  Using Python to Access Web Data
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-17T15:37:41+02:00">
+                2017-02-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <center>sun yimo</center>
+
+<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>This is my assignment notes for Coursera course “Using Python to Access Web Data”. I will put my notes and codes here sorted by weeks.</p>
+<h2 id="Week-1-2"><a href="#Week-1-2" class="headerlink" title="Week 1-2"></a>Week 1-2</h2><ul>
+<li><strong>notes</strong></li>
+</ul>
+<p><code>Regular Expressions</code>also referred to as “regex” or “regexp”, provides a concise and flexible means for matching strings of text, such as particular characters, words, or patterns of characters.A regular expression is written in a formal language that can be interpreted by a regular expression processor.<br><code>import re</code> import regular expressions interpreter processor.</p>
+<p><code>re.search()</code> to see if a string matches a regular expression, similar to using the <code>find()</code> method for strings<br><code>re.findall()</code>extract portions of a string that match your regular expression similar to a combination of <code>find()</code> and slicing: <code>var[5:10]</code></p>
+<ul>
+<li><strong>assigment</strong><blockquote>
+<p>Finding Numbers in a Haystack</p>
+<p>In this assignment you will read through and parse a file with text and numbers. You will extract all the numbers in the file and compute the sum of the numbers.</p>
+<p>Data Files<br>We provide two files for this assignment. One is a sample file where we give you the sum for your testing and the other is the actual data you need to process for the assignment.</p>
+<p>Sample data: <a href="http://python-data.dr-chuck.net/regex_sum_42.txt" target="_blank" rel="external">http://python-data.dr-chuck.net/regex_sum_42.txt</a> (There are 87 values with a sum=445822)<br>Actual data: <a href="http://python-data.dr-chuck.net/regex_sum_355909.txt" target="_blank" rel="external">http://python-data.dr-chuck.net/regex_sum_355909.txt</a> (There are 100 values and the sum ends with 856)<br>These links open in a new window. Make sure to save the file into the same folder as you will be writing your Python program. Note: Each student will have a distinct data file for the assignment - so only use your own data file for analysis.</p>
+</blockquote>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> re</div><div class="line"></div><div class="line">name = input(<span class="string">"Enter file:"</span>)</div><div class="line"><span class="keyword">if</span> len(name) &lt; <span class="number">1</span> : name = <span class="string">"regex_sum_355909.txt"</span></div><div class="line">handle = open(name)</div><div class="line"></div><div class="line">x=list()</div><div class="line"><span class="keyword">for</span> line <span class="keyword">in</span> handle:</div><div class="line">    y=re.findall(<span class="string">'[0-9]+'</span>,line)</div><div class="line">    x=x+y</div><div class="line">sum=<span class="number">0</span></div><div class="line"><span class="keyword">for</span> i <span class="keyword">in</span> x:</div><div class="line">    sum=sum + int(i)</div><div class="line"><span class="keyword">print</span> (sum)</div></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
   <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/02/13/Python Data Structures/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -839,7 +975,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
